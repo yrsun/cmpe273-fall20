@@ -1,14 +1,12 @@
 import zmq
 import sys
+import time
 
 context = zmq.Context()
 
 sock = context.socket(zmq.PULL)
-sock.connect("tcp://127.0.0.1:1235")
-#sock.connect("tcp://127.0.0.1:1236")
-#sock.connect("tcp://127.0.0.1:1237")
+sock.bind("tcp://127.0.0.1:1235")
 
-while True:
+for i in range(10001):
     msg = sock.recv().decode()
-    #sock.send(msg.encode())
     print(msg)
