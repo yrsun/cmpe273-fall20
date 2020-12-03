@@ -1,0 +1,28 @@
+{
+  "services": [{
+    "address": "127.0.0.1",
+    "name": "server1",
+    "tags": ["worker"],
+    "port": 2001
+  },{
+    "address": "127.0.0.1",
+    "name": "server2",
+    "tags": ["worker"],
+    "port": 2002
+  },{
+    "address": "127.0.0.1",
+    "name": "server3",
+    "tags": ["worker"],
+    "port": 2003
+  },{
+    "address": "127.0.0.1",
+    "name": "server4",
+    "tags": ["worker"],
+    "port": 2004
+  },{
+    "address": "127.0.0.1",
+    "name": "server_manager",
+    "tags": ["manager"],
+    "port": 2000
+  }]
+}
